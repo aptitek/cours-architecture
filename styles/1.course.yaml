@@ -275,7 +275,10 @@ macros:
   - inci: \ensuremath{\mathrel{-\!\!\!\!\bullet\!\!\!\!-}}
   - ingo: \ensuremath{\curlyveeinarrow\!\bullet}
   - outgo: \ensuremath{\bullet\!\curlyveeoutarrow}
+  - lnor: \overline{\lor}
+  - lnand: \overline{\land}
   - landor: \veeonwedge
+  - lxor: \veebar
   - cstate: \boxonbox
 
   - rrp: ⦈
