@@ -85,6 +85,7 @@ fonts:
   graphikreg: Graphik LC Web Regular
   graphikmed: Graphik LC Web Medium
   perihelionbb: PerihelionBB-Bold
+  dejavu: DejaVu Sans
 
 elements:
   document:
@@ -172,6 +173,16 @@ elements:
       - Exemple
       - Exemples
     ref: ex
+  exercise:
+    theorem: true
+    title:
+      color: solarized-base2
+    border: solarized-blue
+    background: solarized-base2
+    prefix:
+      - Exercice
+      - Exercices
+    ref: exr
   warning:
     theorem: true
     title:
@@ -260,6 +271,35 @@ bibliography: bibliography/bibliography.bib
 csl: bibliography/aaai.csl
 link-citations: true
 
+keys:
+  meta: ⊞Win
+  tab: ⇆Tab
+  ctrl: ⌃Ctrl
+  alt: ⌥Alt
+  altgr: AltGr
+  shift: ⇧Maj
+  home: ↸Début
+  end: Fin
+  pgup: ⇞
+  pgdown: ⇟
+  esc: Échap
+  space: Espace
+  up: ⬆
+  down: ⬇
+  left: ⬅
+  right: ➡
+  lr: ⬌
+  ud: ⬍
+  arrows: ⬍⬌
+  enter: ↵Entrer
+  back: ⌫Retour
+  del: Suppr
+  menu: ▤
+  print: ImpÉcr
+  fn: Fn
+
+menus: true
+
 macros:
   # LOGOS
   - aptitek: \logo{logos/aptitek.svg}\space
@@ -343,3 +383,27 @@ header-includes:
   - \newcommand{\superscript}[2]{{#1}^{#2}}
   - \newcommand{\subscript}[2]{{#1}_{#2}}
   - \newcommand{\txt}[1]{\text{\mathfont\textit {#1}}}
+
+  # Unicode symbols
+  - \usepackage{newunicodechar}
+  - \DeclareTextFontCommand{\tfb}{\dejavufont}
+  - \newunicodechar{⊞}{\tfb{⊞}}
+  - \newunicodechar{⇆}{\tfb{⇆}}
+  - \newunicodechar{⌃}{\tfb{⌃}}
+  - \newunicodechar{⌥}{\tfb{⌥}}
+  - \newunicodechar{⇧}{\tfb{⇧}}
+  - \newunicodechar{↸}{\tfb{↸}}
+  - \newunicodechar{⇞}{\tfb{⇞}}
+  - \newunicodechar{⇟}{\tfb{⇟}}
+  - \newunicodechar{⬆}{\tfb{⬆}}
+  - \newunicodechar{⬇}{\tfb{⬇}}
+  - \newunicodechar{⬅}{\tfb{⬅}}
+  - \newunicodechar{➡}{\tfb{➡}}
+  - \newunicodechar{⬌}{\tfb{⬌}}
+  - \newunicodechar{⬍}{\tfb{⬍}}
+  - \newunicodechar{↵}{\tfb{↵}}
+  - \newunicodechar{⌫}{\tfb{⌫}}
+  - \newunicodechar{▤}{\tfb{▤}}
+  - \newunicodechar{❯}{\tfb{❯}}
+  - \newunicodechar{✚}{\tfb{✚}}
+  - \newunicodechar{❚}{\tfb{❚}}
